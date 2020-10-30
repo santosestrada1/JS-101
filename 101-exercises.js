@@ -11,5 +11,12 @@ const assert = function(actual, expected, message = "") {
     }
 };
 
-
 // Keep this function here in order to add correct questions to the counter
+function addToDone(message) {
+    const node = document.createElement("LI");
+    const textnode = document.createTextNode(message);
+    node.appendChild(textnode);
+    node.classList.add("finished");
+    document.querySelector(".correct ul").appendChild(node);
+    document.querySelector("#count").innerHTML = document.querySelectorAll('.finished').length + " of 101";
+}
