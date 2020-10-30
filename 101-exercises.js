@@ -14,7 +14,7 @@ const assert = function(actual, expected, message = "") {
 // Keep this function here in order to add correct questions to the counter
 function addToDone(message) {
     const node = document.createElement("LI");              // Create a <li> node
-    const textnode = document.createTextNode(message);              // Create a text node
+    let textnode = document.createTextNode(message);              // Create a text node
     node.appendChild(textnode);                                    // Append the text to <li>
     node.classList.add("finished");
     document.querySelector(".correct ul").appendChild(node);
@@ -34,10 +34,24 @@ let doingJSRightnow = document.getElementById(true);
 let doingJSRightnow = (true);
 
 
-// Exersise 1
+// Exercise 1
 // On the line below, create a variable named onMarsRightNow and assign it the boolean value of false
 let onMarsRightNow = false;
 assert(onMarsRightNow, false, "Exercise 1");
 addToDone("Exercise 1 is correct.");
 
 // Exercise 2
+// Create a variable named fruits and assign it an array of strings containing the following fruits.
+// mango, banana, guava, kiwi, and strawberry.
+let fruits = ['mango', 'banana', 'guava', 'kiwi', 'strawberry'];
+assert(fruits, ['mango', 'banana', 'guava', 'kiwi', 'strawberry'], 'Exercise 2');
+addToDone("Exercise 2 is correct.");
+
+// Exercise 3
+// Create a variable named vegetables and assign it an array of fruits containing the following vegetable names as strings:
+// eggplant, broccoli, carrot, cauliflower, and zucchini
+let vegetables = ['eggplant', 'broccoli', 'carrot', 'cauliflower', 'zuchinni']
+assert (vegetables ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini"], "Exercise 3");
+addToDone('Exercise 3 is correct.');
+
+// Exercise 4
