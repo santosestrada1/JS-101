@@ -66,3 +66,11 @@ addToDone("Exercise 4 is correct");
 fruits.push('tomato');
 assert(fruits, ["mango", "banana", "guava", "kiwi", "strawberry", "tomato"], "Exercise 5");
 addToDone("Exercise 5 is correct");
+
+// Exercise 6
+// add the string "tomato" onto the end of the vegetables array.
+// Recommend using the built-in JS operation to add to an array.
+
+vegetables.push('tomato');
+assert(vegetables,["eggplant", "broccoli", "carrot", "cauliflower", "zucchini", "tomato"], "Exercise 6");
+addToDone("Exercise 6 is correct");
