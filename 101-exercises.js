@@ -14,7 +14,7 @@ const assert = function(actual, expected, message = "") {
 // Keep this function here in order to add correct questions to the counter
 function addToDone(message) {
     const node = document.createElement("LI");              // Create a <li> node
-    let textnode = document.createTextNode(message);              // Create a text node
+    let textnode = document.createTextNode(message);                // Create a text node
     node.appendChild(textnode);                                    // Append the text to <li>
     node.classList.add("finished");
     document.querySelector(".correct ul").appendChild(node);
@@ -60,3 +60,9 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 assert(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "Exercise 4");
 addToDone("Exercise 4 is correct");
 
+// Exercise 5
+// Add the string "tomato" to the end of the fruits array.
+// *Hint* Recommend finding and using a built-in JS operation to add to an array rather than recreating the array.
+fruits.push('tomato');
+assert(fruits, ["mango", "banana", "guava", "kiwi", "strawberry", "tomato"], "Exercise 5");
+addToDone("Exercise 5 is correct");
