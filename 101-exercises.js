@@ -82,3 +82,11 @@ numbers.reverse();
 assert(numbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7");
 addToDone("Exercise 7 is correct");
 
+// Exercise 8
+// Sort the vegetables in alphabetical order. Recommend finding a way to sort the array with a built-in method.
+let vegetables = ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini", "tomato" ];
+vegetables.sort();
+assert(vegetables, ["broccoli", "carrot", "cauliflower",  "eggplant", "tomato", "zucchini"], "Exercise 8")
+addToDone("Exercise 8 is correct.")
+
+// Exercise 9
