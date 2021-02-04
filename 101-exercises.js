@@ -74,3 +74,11 @@ addToDone("Exercise 5 is correct");
 vegetables.push('tomato');
 assert(vegetables,["eggplant", "broccoli", "carrot", "cauliflower", "zucchini", "tomato"], "Exercise 6");
 addToDone("Exercise 6 is correct");
+
+// Exercise 7
+// Given the array of number defined below, reverse the array of numbers that you created above.
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+numbers.reverse();
+assert(numbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7");
+addToDone("Exercise 7 is correct");
+
