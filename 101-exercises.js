@@ -100,7 +100,17 @@ addToDone("Exercise 9 is correct.")
 // Assign the result to a variable named fruitsAndVeggies.
 // *hint* the search engine search here would be "how to combine two arrays in JavaScript", for example.
 
-var fruitsAndVeggies = fruits.concat(vegetables)
+let fruitsAndVeggies = fruits.concat(vegetables)
 assert(fruitsAndVeggies, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana', 'broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 10")
 addToDone("Exercise 10 is correct")
+
+// This function generates a random number that is both positive and even
+function randomPositiveEvenNumber() {
+    let randomNumber = Math.ceil(Math.random() * 100) + 10;
+    if(randomNumber % 2 !== 0) {
+        return randomPositiveEvenNumber()
+    }
+
+    return randomNumber;
+}
 
